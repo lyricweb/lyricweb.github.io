@@ -1,0 +1,70 @@
+.portfolio {
+	background-color: $firm-color;
+	padding-left: 100px;
+	padding-top: 200px;
+	position: relative;
+	top: -80px;
+	&:after {
+		position: absolute;
+		content: '';
+		right: 0;
+		bottom: 0;
+		width: 341px;
+		height: 341px;
+		background: url(../images/portfolio-ell.png) center no-repeat;
+	}
+	&-block {
+		position: relative;
+		padding-top: 100px;
+		padding-bottom: 150px;
+		padding-left: 200px;
+		perspective: 1200px;
+		transform-style: preserve-3d;
+		z-index: 99;
+		h2 {
+			@extend .mus;
+			position: absolute;
+			display: inline-block;
+			text-align: right;
+			font-size: 30px;
+			color: $add-firm-color;
+			right: 100px;
+		}
+		img {
+			position: relative;
+			z-index: 9;
+			width: 65%;
+			transform: rotateY(30deg);
+			box-shadow: 0px 26px 68px -7px #000000;
+		}
+	}
+	.slider-btn {
+		background-color: transparent;
+		border: none;
+		position: absolute;
+		top: 60%;
+		right: 360px;
+		transform: translateY(-50%);		
+	}
+	.left-btn {
+		left: 180px;
+		z-index: 1;
+	}
+	.right-btn {
+		img {
+			width: 60%;
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.footer {
+	background-color: $firm-color;
+	position: relative;
+	top: -80px;
+	p {
+		@extend .mus;
+		color: $add-firm-color;
+		font-size: 28px;
+	}
+}

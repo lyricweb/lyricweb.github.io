@@ -1,0 +1,141 @@
+body {
+	overflow-x: hidden;
+	background-color: $firm-color;
+}
+::-webkit-scrollbar { 
+	width: 10px;
+}
+::-webkit-scrollbar-track-piece {
+	background-color: $firm-color;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #9b00bc;
+}
+button {
+	background-color: transparent;
+	border: none;
+}
+a:focus, button:focus {
+	outline: none;
+}
+.header {
+	position: relative;
+	background-color: $firm-color;
+	padding: 25px 0 440px;
+	color: $add-firm-color;
+	&:after {
+		position: absolute;
+		content: '';
+		
+	}
+	a {
+		font-size: 12px;
+		color: $add-firm-color;
+	}
+	.map {
+		position: relative;
+		display: inline-block;
+		top: 50%;
+		transform: translateY(-50%);
+		float: left;
+		margin-right: 50px;
+		font-size: 12px;
+		margin-bottom: 0;
+		&:before {
+			position: absolute;
+			content: '';
+			left: -16px;
+			top: 0;
+			width: 11px;
+			height: 15px;
+			background: url(../images/map.png) center no-repeat;
+		}
+	}
+	.head-link {
+		position: relative;
+		top: 52.5%;
+		transform: translateY(-50%);
+		.phone-list {
+			display: inline-block;
+			position: relative;
+			&:before {
+				position: absolute;
+				content: '';
+				top: 3px;
+				left: -20px;
+				width: 15px;
+				height: 14px;
+				background: url(../images/phone.png) center no-repeat;
+			}
+			.drop {
+				position: absolute;
+				top: 10px;
+				right: -16px;
+				width: 8px;
+				height: 6px;
+				background: url(../images/drop.png) center no-repeat;
+			}
+			.dropdown {
+				display: none;
+				position: absolute;
+				width: 300px;
+				left: -20px;
+				.drop-link {
+					position: relative;
+					z-index: 9;
+					display: inline-block;
+					background-color: $add-firm-color;
+					color: $firm-color;
+					padding: 5px 20px;
+				}
+			}
+			a {
+				position: relative;
+				top: 0;
+			}
+		}
+		.mail {
+			position: relative;
+			top: -5px;
+			z-index: -1;
+			&:before {
+				position: absolute;
+				content: '';
+				left: -20px;
+				top: 1px;
+				width: 15px;
+				height: 13px;
+				background: url(../images/mail.png) center no-repeat;
+			}
+		}
+	}
+	* {
+		position: relative;
+		z-index: 1;
+	}
+	h1 {
+		margin-top: 62px;
+		@extend .mus;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		top: 250px;
+		left: 0;
+		width: 738px;
+		height: 738px;
+		background: url(../images/main-ell.png) -350px 0 no-repeat;
+		z-index: 2;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 37%;
+		width: 719px;
+		height: 573px;
+		background: url(../images/main-bg.png) center no-repeat;
+		z-index: 0;
+	}
+}
