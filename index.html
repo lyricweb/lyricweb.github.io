@@ -19,7 +19,7 @@
     <div class="header">
     	<div class="container">
     		<div class="row">
-    			<div class="col-xl-1">
+    			<div class="col-xl-1 col-lg-1 col-2">
 						<svg width="70" height="70" viewBox="0 0 467 467" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<circle cx="233.5" cy="233.5" r="233.5" fill="#9B00BC"/>
 							<path d="M68.0097 240.301L153.589 168.324L167.191 182.493L98.0473 240.301L167.191 297.542L153.589 311.711L68.0097 240.301Z" fill="white"/>
@@ -28,7 +28,7 @@
 							<path d="M398.424 240.301L312.845 168.324L299.243 182.493L368.386 240.301L299.243 297.542L312.845 311.711L398.424 240.301Z" fill="white"/>
 						</svg>
     			</div>
-    			<div class="col-xl-3 offset-xl-1">
+    			<div class="col-xl-3 offset-xl-1 col-lg-3 offset-lg-1 col-10">
     				<p class="map">Вся Россия и <br>страны СНГ :)</p>
     				<div class="head-link">
     					<div class="phone-list">
@@ -43,7 +43,7 @@
     			</div>
     		</div>
     		<div class="row">
-    			<div class="col-xl-6 offset-xl-2">
+    			<div class="col-xl-6 offset-xl-2 col-lg-6 offset-lg-2">
     				<h1>Портфолио команды <br>LyricWEB</h1>
     			</div>
     		</div>
@@ -54,49 +54,65 @@
     	<a href="https://aqua-profi.com/lp/" target="_blank">
     		<div class="portfolio-block">
     			<h2>Сайт компании <br>&laquo;Аквапрофи&raquo;</h2>
-    			<img src="images/pb-1.jpg" alt="Превью">
+    			<div class="img-wrap">
+    				<img src="images/pb-1.jpg" alt="Превью">
+    			</div>
     		</div>
     	</a>
     	<a href="" target="_blank">
     		<div class="portfolio-block">
     			<h2>Дизайн сайта <br>ft.net</h2>
-    			<img src="images/pb-2.jpg" alt="Превью">
+    			<div class="img-wrap">
+    				<img src="images/pb-2.jpg" alt="Превью">
+    			</div>
     		</div>
     	</a>
     	<a href="https://itcloud2018.github.io/" target="_blank">
     		<div class="portfolio-block">
     			<h2>IT-решения <br>для бизнеса</h2>
-    			<img src="images/pb-3.jpg" alt="Превью">
+    			<div class="img-wrap">
+    				<img src="images/pb-3.jpg" alt="Превью">
+    			</div>
     		</div>
     	</a>
     	<a href="https://investing2018.github.io/" target="_blank">
     		<div class="portfolio-block">
     			<h2>Сайт компании <br>"Размахнин"</h2>
-    			<img src="images/pb-4.jpg" alt="Превью">
+    			<div class="img-wrap">
+    				<img src="images/pb-4.jpg" alt="Превью">
+    			</div>
     		</div>
     	</a>
     	<a href="https://plaster2018.github.io" target="_blank">
     		<div class="portfolio-block">
     			<h2>Сайт услуг <br>для ремонта</h2>
-    			<img src="images/pb-5.jpg" alt="Превью">
+    			<div class="img-wrap">
+    				<img src="images/pb-5.jpg" alt="Превью">
+    			</div>
     		</div>
     	</a>
     	<a href="" target="_blank">
     		<div class="portfolio-block">
     			<h2>Дизайн сайта <br>"Ваш костюм"</h2>
-    			<img src="images/pb-6.jpg" alt="Превью">
+    			<div class="img-wrap">
+    				<img src="images/pb-6.jpg" alt="Превью">
+    			</div>
     		</div>
     	</a>
     	<a href="https://maxifit.github.io/" target="_blank">
     		<div class="portfolio-block">
     			<h2>Сайт фитнес-клуба <br>Maximumfit</h2>
-    			<img src="images/pb-7.jpg" alt="Превью">
+    			<div class="img-wrap">
+    				<img src="images/pb-7.jpg" alt="Превью">
+    			</div>
     		</div>
     	</a>
     	<a href="https://zaborvyshegor.ru" target="_blank">
     		<div class="portfolio-block">
     			<h2>Сайт по установке <br>заборов</h2>
-    			<img src="images/pb-8.jpg" alt="Превью">
+    			<div class="img-wrap">
+    				<img src="images/pb-8.jpg" alt="Превью">
+    			</div>
     		</div>
     	</a>
     </div>
@@ -118,6 +134,15 @@
 		<script>
 			$(document).ready(function() {
 				$('.portfolio').slick({
+					responsive: [
+					    {
+					      breakpoint: 576,
+					      settings: {					        
+					        slidesToShow: 1,
+					        slidesToScroll: 1
+					      }
+					    }
+					  ],
 					prevArrow: '<button type="button" class="slider-btn left-btn"><img src="images/arrow.png" alt="" /></button>',
 					nextArrow: '<button type="button" class="slider-btn right-btn"><img src="images/arrow.png" alt="" /></button>'
 				});
